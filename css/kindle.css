@@ -164,7 +164,7 @@ html.night {
 #clock {
   position: absolute;
   top: 35%;                
-  left: 15%;
+  left: 5%;
   transform: translateX(-50%);
   font-size: 15rem;        
   line-height: 1;
@@ -178,7 +178,7 @@ html.night {
   font-size: 6rem;     
   line-height: 1.1;
   text-align: right;   
-  transform: translateY(-35px);       
+  transform: translateY(-55px);       
   margin-top: 0.4rem;
 }
 
