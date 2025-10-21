@@ -163,10 +163,10 @@ html.night {
 
 #clock {
   position: absolute;
-  top: 40%;                
-  left: 20%;
+  top: 35%;                
+  left: 15%;
   transform: translateX(-50%);
-  font-size: 10rem;        
+  font-size: 15rem;        
   line-height: 1;
   text-align: center;
   margin: 0;
@@ -178,7 +178,7 @@ html.night {
   font-size: 6rem;     
   line-height: 1.1;
   text-align: right;   
-  transform: translateY(-25px);       
+  transform: translateY(-35px);       
   margin-top: 0.4rem;
 }
 
@@ -187,10 +187,10 @@ html.night {
 }
 
 #clock .sec {
-  font-size: 0.6em;     /* smaller seconds */
-  vertical-align: baseline;  /* try 'top' or 'middle' if you prefer */
-  opacity: 0.9;         /* subtle deemphasis (optional) */
-  margin-left: 0.1rem;  /* tiny gap from minutes */
+  font-size: 0.6em;    
+  vertical-align: baseline; 
+  opacity: 0.9;        
+  margin-left: 0.1rem;  
 }
 
 
