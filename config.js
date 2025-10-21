@@ -1,5 +1,4 @@
 var api_locParams = "lat=50.1243111&lon=14.4901953";
-// or api_locParams = "q=Paris";
 var api_appId = "e68f9fae53273627d62ac93d0061a915";
 var api_lang = "sk"
 var api_units = "metric"; 
@@ -7,7 +6,7 @@ var api_units = "metric";
 var api_params = null;
 
 // refresh time in miliseconds (default 30 mins)
-var refreshTime = 30 * 60 * 1000;
+var refreshTime = 10 * 60 * 1000;
 
 // Browser in kindle paperwhite doesn't support rotation.
 // You can override with this parameter 'll' and 'lr' for landscape left/right, 'up' for upside down.
