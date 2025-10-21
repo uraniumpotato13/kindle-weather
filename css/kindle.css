@@ -178,7 +178,8 @@ html.night {
   font-size: 6rem;     
   line-height: 1.1;
   text-align: right;   
-  transform: translateY(-55px);       
+  transform: translateY(-155px);       
+  transform: translateX(-55px); 
   margin-top: 0.4rem;
 }
 
