@@ -217,6 +217,7 @@ html.night {
 
 .landscape #description {
     /* font-size: 35.4px; */
+    display: none !important;
     font-size: 5rem;
 }
 
