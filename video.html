@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>…</title>
+
+  <style>
+    html, body{
+      margin:0;
+      height:100%;
+      background:#000;
+    }
+    .wrap{
+      position:fixed;
+      inset:0;
+      background:#000;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+    }
+    video{
+      width:100vw;
+      height:100vh;
+      object-fit: cover; 
+      background:#000;
+    }
+    .skip{
+      position:fixed;
+      top: max(12px, env(safe-area-inset-top));
+      right: max(12px, env(safe-area-inset-right));
+      z-index:10;
+      padding:10px 12px;
+      border-radius:12px;
+      border:1px solid rgba(255,255,255,.25);
+      background: rgba(0,0,0,.45);
+      color:#fff;
+      font-weight:650;
+      font-size:14px;
+    }
+  </style>
+</head>
+<body>
+  <button class="skip" id="skipBtn" type="button">Skip</button>
+
+  <div class="wrap">
+    <video
+    id="v"
+    playsinline
+    webkit-playsinline
+    preload="auto"
+    controls
+    style="display:block"
+    >
+    <source src="rickroll.mp4" type="video/mp4">
+    </video>
+
+  </div>
+
+  <script>
+    const nextPage = "celebration.html";
+    const v = document.getElementById("v");
+    const skipBtn = document.getElementById("skipBtn");
+
+    function goNext(){
+      window.location.href = nextPage;
+    }
+    v.play().catch(() => {
+      document.body.addEventListener("pointerdown", () => v.play().catch(()=>{}), { once:true });
+    });
+
+    v.addEventListener("ended", goNext);
+    setTimeout(goNext, 10000);
+
+    skipBtn.addEventListener("click", goNext);
+  </script>
+</body>
+</html>
